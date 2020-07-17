@@ -1,0 +1,12 @@
+modules:
+  'jira:issuePanel':
+    - key: hello-world-app-hello-world-panel
+      function: main
+      title: Covid Smart Scan
+      icon: 'https://atlassian.design/favicon.png'
+  function:
+    - key: main
+      handler: index.run
+app:
+  id: 'ari:cloud:ecosystem::app/f72ee57f-0ca3-432f-919d-638d050d69c0'
+  name: hello-world-app
