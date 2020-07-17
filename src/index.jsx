@@ -138,7 +138,9 @@ const App = () => {
 
   const [comments] = useState(async () => await fetchCommentsForIssue(context.platformContext.issueKey));
 
-var img = useState(async () => await scanXray(comments));
+  const [img] = useState(async () => await scanXray(comments));
+
+    console.log(img);
 // img = img[0].substring(0,10) + '...' + img[0].substring(img[0].length-10, img[0].length);
 //     return (
 //         <Fragment>
